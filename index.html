@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Главное Меню</title>
+        <script defer src="mainMenu_script.js"></script>
+        <script defer src="tasks.js"></script>
+        <script defer src="mainMenu_buttons.js"></script>
+        <link rel="stylesheet" href="index_style.css">
+        <link rel="stylesheet" href="mainMenu_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo_container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M6.002 22.5q-1.04 0-1.771-.729q-.731-.728-.731-1.769q0-1.04.73-1.771Q4.958 17.5 6 17.5q.292 0 .612.085q.319.084.594.228l2.54-3.16q-.546-.582-.744-1.288q-.198-.705-.067-1.43l-3.737-1.233q-.329.586-.907.942Q3.712 12 3 12q-1.042 0-1.77-.729Q.5 10.543.5 9.502q0-1.04.729-1.771Q1.956 7 2.997 7q1.04 0 1.771.73q.731.728.731 1.77q0 .127-.01.196q-.01.07-.01.139l3.718 1.296q.327-.631.934-1.102q.606-.471 1.426-.608V5.458q-.956-.18-1.507-.89q-.551-.71-.551-1.576q0-1.03.729-1.761Q10.957.5 11.998.5q1.04 0 1.771.73q.731.728.731 1.77q0 .858-.554 1.568q-.554.71-1.504.89V9.42q.82.137 1.417.608q.597.471.943 1.102l3.717-1.296q-.019-.089-.019-.148V9.5q0-1.042.729-1.77q.728-.73 1.769-.73q1.04 0 1.771.729q.731.728.731 1.769q0 1.04-.73 1.771Q22.043 12 21 12q-.706 0-1.29-.356q-.585-.356-.908-.942l-3.737 1.233q.131.725-.067 1.428q-.198.702-.744 1.272l2.54 3.153q.275-.125.594-.206q.32-.082.611-.082q1.042 0 1.772.729q.729.728.729 1.769q0 1.04-.729 1.771q-.728.731-1.769.731q-1.04 0-1.771-.73q-.731-.728-.731-1.77q0-.446.143-.859q.144-.412.476-.768l-2.54-3.198q-.679.44-1.572.44q-.894 0-1.592-.44l-2.534 3.198q.313.356.466.768q.153.413.153.859q0 1.042-.729 1.77q-.728.73-1.769.73ZM3 11q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059Q3.617 8 3 8t-1.059.441Q1.5 8.883 1.5 9.5t.441 1.059Q2.383 11 3 11Zm3 10.5q.617 0 1.059-.441Q7.5 20.617 7.5 20t-.441-1.059Q6.617 18.5 6 18.5t-1.059.441Q4.5 19.383 4.5 20t.441 1.059Q5.383 21.5 6 21.5Zm6-17q.617 0 1.059-.441Q13.5 3.617 13.5 3t-.441-1.059Q12.617 1.5 12 1.5t-1.059.441Q10.5 2.383 10.5 3t.441 1.059Q11.383 4.5 12 4.5Zm0 10.115q.877 0 1.496-.619t.62-1.496q0-.877-.62-1.496T12 10.384q-.877 0-1.496.62t-.62 1.496q0 .877.62 1.496t1.496.62Zm6 6.885q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059Q18.617 18.5 18 18.5t-1.059.441Q16.5 19.383 16.5 20t.441 1.059q.442.441 1.059.441ZM21 11q.617 0 1.059-.441q.441-.442.441-1.059t-.441-1.059Q21.617 8 21 8t-1.059.441Q19.5 8.883 19.5 9.5t.441 1.059Q20.383 11 21 11Zm-9-8ZM3 9.5Zm9 3Zm9-3ZM6 20Zm12 0Z"/></svg>
+                    <a href="index.html">HelpHub</a>
+            </div>
+
+            <div class="menu_bar">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"/></svg></button>
+            </div>
+        </header>
+
+        <div class="main_menu">
+            <div class="main_menu_box_parent">
+                <div class="main_menu_box_parent_header">
+                    <p id="mmGood">Добрый день!</p>
+                </div>
+                <div class="get_today_date">
+                    <p>Сегодня: </p> <p id="innerDate"></p>
+                </div>
+
+                <div class="toolsbar_button_bar" id="toolBarBtns">
+                    <button class="choose_tool_btn" id="toAnswersRedBtn"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 512 512"><g transform="translate(512 0) scale(-1 1)"><path fill="white" d="M488 348.78h-70.24l-15.1 87.44l-48.78-87.44H169v-50h190v-157h129zm-145-273v207H158.13l-48.79 87.47l-15.11-87.47H24v-207zM136.724 215.324c0-10.139-12.257-15.214-19.425-8.046c-7.168 7.168-2.093 19.426 8.046 19.426c6.285 0 11.38-5.095 11.38-11.38zm60.945 0c-.068-10.12-12.32-15.122-19.452-7.943c-7.131 7.18-2.047 19.399 8.073 19.399c6.314 0 11.422-5.141 11.38-11.456zm60.945 0c0-10.139-12.257-15.214-19.425-8.046c-7.169 7.168-2.093 19.426 8.046 19.426c6.284 0 11.38-5.095 11.38-11.38z"/></g></svg></button>
+                    <button class="choose_tool_btn"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><path fill="white" d="M21 2h-6a1 1 0 0 0 0 2h5v5a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1Zm0 12a1 1 0 0 0-1 1v5h-5a1 1 0 0 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1Zm-9-8a3 3 0 0 0-3 3v1a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2V9a3 3 0 0 0-3-3Zm-1 3a1 1 0 0 1 2 0v1h-2Zm4 7H9v-4h6ZM3 10a1 1 0 0 0 1-1V4h5a1 1 0 0 0 0-2H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1Zm6 10H4v-5a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2Z"/></g></svg></button>
+                    <button class="choose_tool_btn"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 24 24"><path fill="white" d="M18 15H6l-4 4V3a1 1 0 0 1 1-1h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1m5-6v14l-4-4H8a1 1 0 0 1-1-1v-1h14V8h1a1 1 0 0 1 1 1M8.19 4c-.87 0-1.57.2-2.11.59c-.52.41-.78.98-.77 1.77l.01.03h1.93c.01-.3.1-.53.28-.69a1 1 0 0 1 .66-.23c.31 0 .57.1.75.28c.18.19.26.45.26.75c0 .32-.07.59-.23.82c-.14.23-.35.43-.61.59c-.51.34-.86.64-1.05.91C7.11 9.08 7 9.5 7 10h2c0-.31.04-.56.13-.74c.09-.18.26-.36.51-.52c.45-.24.82-.53 1.11-.93c.29-.4.44-.81.44-1.31c0-.76-.27-1.37-.81-1.82C9.85 4.23 9.12 4 8.19 4M7 11v2h2v-2H7m6 2h2v-2h-2v2m0-9v6h2V4h-2Z"/></svg></button>
+                    <button class="choose_tool_btn"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 2048 2048"><path fill="white" d="M1632 1462q66 33 119 81t90 107t58 128t21 142h-128q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149H896q0-73 20-142t58-128t91-107t119-81q-75-54-117-135t-43-175q0-79-30-149t-82-122t-123-83t-149-30q-80 0-149 30t-122 82t-83 123t-30 149H128q0-73 20-142t58-128t91-107t119-81q-75-54-117-135t-43-175q0-79 30-149t82-122t122-83T640 0q79 0 149 30t122 82t83 123t30 149q0 94-42 175T864 694q76 38 136 98t98 136q54-75 135-117t175-43q79 0 149 30t122 82t83 123t30 149q0 94-42 175t-118 135zM640 640q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20zm768 768q53 0 99-20t82-55t55-81t20-100q0-53-20-99t-55-82t-81-55t-100-20q-53 0-99 20t-82 55t-55 81t-20 100q0 53 20 99t55 82t81 55t100 20zm128-1152h-384V128h512v512h-128V256z"/></svg></button>
+                </div>
+
+                <div class="main_menu_box_parent_header">
+                    <p>Мои задачи:</p>
+                </div>
+                <div class="tasks_button_bar">
+                    <button class="tasks_button_add" id="addTaskBtn"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 24 24"><path fill="white" d="M18.192 19.385v-3h-3v-1h3v-3h1v3h3v1h-3v3h-1ZM1.808 20V4h16v6h-1V7.385h-14V19h13v1h-14Z"/></svg></button>
+                    <button class="tasks_button_remove"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="45" viewBox="0 0 24 24"><path fill="white" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V5h14v14M17 8.4L13.4 12l3.6 3.6l-1.4 1.4l-3.6-3.6L8.4 17L7 15.6l3.6-3.6L7 8.4L8.4 7l3.6 3.6L15.6 7L17 8.4Z"/></svg></button>
+                </div>
+                
+                <div class="task_input_box">
+                    <input type="text" placeholder="Введите текст задачи..." id="inptTaskText">
+                </div>
+
+                <div class="tasks_list" id="taskList"></div>
+            </div>
+        </div>
+    </body>
+
+</html>

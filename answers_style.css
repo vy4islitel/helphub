@@ -1,0 +1,97 @@
+
+.answ_main_menu_box {
+    margin-top: 10%;
+    display: flex;
+    background-color: rgba(81, 63, 156, 0.3);
+    backdrop-filter: blur(5px);
+    width: 360px;
+    border-radius: 2px;
+}
+
+.answ_main_menu_box_parent {
+    display: block;
+}
+
+.answ_main_menu_box_parent_header {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.answers_bar_st {
+    display: flex;
+    background: rgba(81, 63, 156, 0.3);
+}
+
+.answers_bar_st button {
+    width: 120px;
+    height: 90px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.answers_bar_st p {
+    font-size: 15px;
+    color: white;
+}
+
+.answers_bar_st button:hover {
+    transition: 0.3s ease;
+    background-color: rgba(25,25,25,0.3);
+}
+
+.ticket_number_box {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding: 10px 15px;
+}
+
+.ticket_number_box p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ticket_number_box input {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.say_hello_box {
+    padding: 10px 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    display: flex;
+    color: white;
+}
+
+.say_hello_box option {
+    font-size: 18px;
+}
+
+.ready_text_box {
+    padding: 10px 15px;
+    background-color: rgba(81, 63, 156, 0.3);
+}
+
+.ready_text_box p {
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.ready_text_box textarea {
+    width: 330px;
+    height: 60px;
+    background: transparent;
+    color: white;
+}
