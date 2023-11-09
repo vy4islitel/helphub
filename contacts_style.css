@@ -1,0 +1,68 @@
+.cont_main_menu_box_parent {
+    background-color: rgba(81, 63, 156, 0.3);
+    backdrop-filter: blur(5px);
+    margin-top: 10%;
+    width: 360px;
+    display: flex;
+    border-radius: 2px;
+}
+
+.cont_main_menu_box_child {
+    display: block;
+}
+
+.cont_main_menu_box_header {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 360px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cont_operators_box p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.cont_choose_box {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cont_choose_box select {
+    background: transparent;
+    width: 180px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    border: none;
+}
+
+.cont_choose_box select option {
+    background: rgba(25,25,25)
+}
+
+.cont_todisplay {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.cont_todisplay p {
+    text-align: left;
+    font-size: 15px;
+}
+
+.cont_todisplay_lb {
+    width: 180px;
+}
+
+.cont_todisplay_rb {
+    width: 180px;
+}

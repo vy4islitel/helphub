@@ -26,6 +26,9 @@ ticketOpenedBtn.onclick = function ticketOpenedF() {
     console.log(generateText)
 
     innerText.innerHTML = `${generateText}`
+
+    innerText.select()
+    document.execCommand('copy')
 }
 
 ticketMoreInfoBtn.onclick = function ticketMoreInfoF() {
@@ -80,7 +83,7 @@ ticketClosedBtn.onclick = function ticketClosedF() {
     innerText.innerHTML = `${generateText}`
 }
 
-ticketActualityBtn.onclick = function() {
+ticketActualityBtn.onclick = function ticketActualityF() {
     let ticketActualityText = 'Просьба уточнить актуальность заявки № ' + ticketNumber.value
 
     if (sayHelloCheck.checked) {
